@@ -6,7 +6,7 @@ author:
   name: Nguyen Thai Ngoc
   picture: https://res.cloudinary.com/ntngoc96/image/upload/v1678503088/Personal%20Info/avatar_p5dgxx.jpg
 github_username: nntwelve
-theme: minimal
+theme: jekyll-theme-primer
 # theme: jekyll-theme-basically-basic
 # plugins: # previsously gems
 #   - jekyll-feed
