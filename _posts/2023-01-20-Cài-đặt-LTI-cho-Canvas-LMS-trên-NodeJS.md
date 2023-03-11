@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Cài đặt LTI cho Canvas LMS trên NodeJS
+date: 2023-01-20 12:47:12 -0000
+categories: Canvas Learning Management System
 ---
 
 # Cài đặt LTI cho Canvas LMS trên NodeJS

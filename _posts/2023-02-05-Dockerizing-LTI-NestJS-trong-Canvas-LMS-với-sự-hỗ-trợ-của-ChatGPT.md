@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Cài đặt LTI cho Canvas LMS với NestJS Framework'
+title: 'Dockerizing LTI NestJS trong Canvas LMS với sự hỗ trợ của ChatGPT'
 date: 2023-02-01 17:27:12 -0000
 categories: Canvas Learning Management System
 ---
