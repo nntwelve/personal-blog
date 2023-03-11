@@ -2,9 +2,9 @@ lang: vi-VN
 title: My Blog
 email: ntngocwd@gmail.com
 description: My personal blog about every I have learned
-author:
-  name: Nguyen Thai Ngoc
-  picture: https://res.cloudinary.com/ntngoc96/image/upload/v1678503088/Personal%20Info/avatar_p5dgxx.jpg
+# author:
+#   name: Nguyen Thai Ngoc
+#   picture: https://res.cloudinary.com/ntngoc96/image/upload/v1678503088/Personal%20Info/avatar_p5dgxx.jpg
 github_username: nntwelve
 theme: minima
 # theme: jekyll-theme-basically-basic
