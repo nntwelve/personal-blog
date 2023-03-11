@@ -3,6 +3,8 @@ layout: post
 title: Cài đặt LTI cho Canvas LMS trên NodeJS
 ---
 
+# Cài đặt LTI cho Canvas LMS trên NodeJS
+
 Hiện tại mình thấy có nhiều trường Đại Học đã tích hợp các **LMS ( Learning Management System ) Platform** vào việc giảng dạy online hoặc bổ trợ cho giảng dạy tại lớp. **LMS** mang đến nhiều tiện lợi cho trong việc quản lí của nhà trường và giảng viên trở nên dễ dàng hơn.
 
 Bên cạnh các chức năng có sẵn của **LMS**, đôi khi chúng ta cần bổ sung thêm các tính năng theo nhu cầu, **LTI** sẽ là công cụ giúp chúng ta giải quyết các nhu cầu đó . Trong bài viết này chúng ta sẽ cùng tìm hiểu sơ qua về **LTI** và cách cài đặt **LTI** vào **Canvas LMS** để các bạn có thể dễ dàng ứng dụng vào các dự án về **LTI** trong **LMS** sau này.
@@ -17,7 +19,7 @@ Có rất nhiều **LTI** có sẵn trên [App Center](https://www.eduappcenter.
 
 # LTI hoạt động như thế nào?
 
-![image.png](https://images.viblo.asia/ccb55460-0780-47b5-950a-1ad4e45f4936.png)
+![image.png](https://res.cloudinary.com/ntngoc96/image/upload/v1678505054/blogs/C%C3%A0i%20%C4%91%E1%BA%B7t%20LTI%20cho%20Canvas%20LMS%20tr%C3%AAn%20NodeJS/ccb55460-0780-47b5-950a-1ad4e45f4936_r6orhf.webp)
 
 # Cài đặt LTI trên Canvas
 
@@ -26,10 +28,10 @@ Có rất nhiều **LTI** có sẵn trên [App Center](https://www.eduappcenter.
 1. Login vào Canvas, sau đó vào **Admin** ➡️ **Root account** ( ở đây có thể khác nhau về tên tùy theo config của các bạn, thông thường url sẽ là https://your-canvas-domain/accounts/1 )
 2. Bấm chọn **Developer keys** ở giao diện vừa hiển thị.
 3. Ở giao diện **Developer keys**, bấm chọn button **|+ Developer Key|** và sau đó chọn **|+ LTI Key|** như hình bên dưới:
-   ![image.png](https://images.viblo.asia/14e1c4eb-02bd-4898-bd0e-4600db00ed2c.png)
+   ![image.png](https://res.cloudinary.com/ntngoc96/image/upload/v1678505054/blogs/C%C3%A0i%20%C4%91%E1%BA%B7t%20LTI%20cho%20Canvas%20LMS%20tr%C3%AAn%20NodeJS/14e1c4eb-02bd-4898-bd0e-4600db00ed2c_vrqxba.webp)
 4. Giao diện tạo **LTI Key** xuất hiện, vì phần giao diện config nay hơi dài nên mình sẽ chia làm 2 phần.
    **_Phần 1:_** chúng ta sẽ điền vào các trường như hình bên dưới:
-   ![image.png](https://images.viblo.asia/78f88206-feef-44aa-a32b-5a6b46aa41f4.png)
+   ![image.png](https://res.cloudinary.com/ntngoc96/image/upload/v1678505054/blogs/C%C3%A0i%20%C4%91%E1%BA%B7t%20LTI%20cho%20Canvas%20LMS%20tr%C3%AAn%20NodeJS/78f88206-feef-44aa-a32b-5a6b46aa41f4_cdf1qr.webp)
    **Lưu ý**:
 
    - Các trường có dấu "\*" thì bắt buộc phải điền.
@@ -37,18 +39,18 @@ Có rất nhiều **LTI** có sẵn trên [App Center](https://www.eduappcenter.
    - Phần _JWK Method_ chuyển về _Public JWK URL_ ( mặc định _Public JWK_ )
 
    **_Phần 2:_** khi kéo xuống sẽ thấy giao diện tiếp theo
-   ![image.png](https://images.viblo.asia/f6bb0d6d-50b2-4b3a-9896-1d990fe1a421.png)
+   ![image.png](https://res.cloudinary.com/ntngoc96/image/upload/v1678505054/blogs/C%C3%A0i%20%C4%91%E1%BA%B7t%20LTI%20cho%20Canvas%20LMS%20tr%C3%AAn%20NodeJS/f6bb0d6d-50b2-4b3a-9896-1d990fe1a421_aoqlrp.webp)
    _ Ở mục **LTI Advantage Services** sẽ giúp phân quyền cụ thể hơn các dữ liệu từ Canvas sang LTI, tùy theo yêu cầu dự án sẽ bật các option khác nhau. Nếu các bạn chưa quen có thể bật hết để dễ thao tác.
    _ Phần **Additional Settings** mình sẽ sử dụng trường **Custom fields** để gửi kèm role của account hiện tại từ Canvas sang LTI, các giá trị này sẽ được gửi kèm theo response trong kết nối giữa Canvas và LTI. Tham khảo thêm các biến có thể gửi đi ở [đây](https://canvas.instructure.com/doc/api/file.tools_variable_substitutions.html).
 
 5. Sau khi ấn button **Save** chúng ta sẽ được 1 Developer Key mới như hình dưới, ấn **ON** ở cột _State_. Dãy số dài là _Client ID_, bấm vào _Show key_ để hiển thị _Secret key_.
-   ![image.png](https://images.viblo.asia/59f4eb3f-fca2-46da-b30b-0057d478b700.png)
+   ![image.png](https://res.cloudinary.com/ntngoc96/image/upload/v1678508025/blogs/C%C3%A0i%20%C4%91%E1%BA%B7t%20LTI%20cho%20Canvas%20LMS%20tr%C3%AAn%20NodeJS/59f4eb3f-fca2-46da-b30b-0057d478b700_pjga6s.webp)
 6. Để hiển thị LTI lên Canvas chúng ta cần thêm 1 bước cuối cùng là tạo External App, bấm vào **Setting** ➡️ **App** như hình dưới, sau đó chọn **+ App**:
-   ![image.png](https://images.viblo.asia/f3ea3749-ff8e-4a47-8038-b18ce770cfd9.png)
+   ![image.png](https://res.cloudinary.com/ntngoc96/image/upload/v1678508025/blogs/C%C3%A0i%20%C4%91%E1%BA%B7t%20LTI%20cho%20Canvas%20LMS%20tr%C3%AAn%20NodeJS/f3ea3749-ff8e-4a47-8038-b18ce770cfd9_obp7li.webp)
 7. Popup mới hiện lên, ở phần **Configuration Type** chọn _By Client ID_, sau đó nhập vào _Client ID_ vừa tạo ở bước 5, bấm **Submit** ➡️ **Install** :
-   ![image.png](https://images.viblo.asia/59f4c2f9-6035-44a6-af94-7ee202dec836.png)
+   ![image.png](https://res.cloudinary.com/ntngoc96/image/upload/v1678508025/blogs/C%C3%A0i%20%C4%91%E1%BA%B7t%20LTI%20cho%20Canvas%20LMS%20tr%C3%AAn%20NodeJS/59f4c2f9-6035-44a6-af94-7ee202dec836_gjesx1.webp)
 8. Refresh lại trang các bạn sẽ thấy LTI đã được hiển thị trên Canvas ( Phía dưới **_Developer keys_** ở sidebar - vì khi nảy ở Placement trong phần config Developer key chúng ta có để _Account Navigation_, tương tự khi vào Course cũng sẽ hiển thị do giá trị của Placement có chứa _Course Navigation_):
-   ![image.png](https://images.viblo.asia/61dbb0ca-539d-4f8e-a7d6-e41bd35b77e0.png)
+   ![image.png](https://res.cloudinary.com/ntngoc96/image/upload/v1678508025/blogs/C%C3%A0i%20%C4%91%E1%BA%B7t%20LTI%20cho%20Canvas%20LMS%20tr%C3%AAn%20NodeJS/61dbb0ca-539d-4f8e-a7d6-e41bd35b77e0_rtbsls.webp)
 
 Đó là toàn bộ các bước cơ bản để tạo External App sử dụng LTI trên Canvas, chúng ta sẽ đến với phần tiếp theo là cấu hình trên NodeJS.
 
@@ -73,24 +75,24 @@ Dựa vào document từ phía nhà phát triển, chúng ta nên sử dụng **
 
 3. Tạo cấu trúc thư mục, vì đây là bài hướng dẫn cài đặt **LTI** nên mình sẽ tạo cấu trúc ngắn gọn để các bạn có thể triển khai một cách nhanh gọn và dễ dàng nhất
 
-![image.png](https://images.viblo.asia/3bead5db-a3f0-489f-b8f2-7992f05ab5fa.png)
+![image.png](https://res.cloudinary.com/ntngoc96/image/upload/v1678508025/blogs/C%C3%A0i%20%C4%91%E1%BA%B7t%20LTI%20cho%20Canvas%20LMS%20tr%C3%AAn%20NodeJS/3bead5db-a3f0-489f-b8f2-7992f05ab5fa_awzcp2.webp)
 Nội dung và ý nghĩa của các file như sau:
 
-    ```shell:.env
-    DATABASE_NAME=lti_acocunt_role
-    DATABASE_USERNAME=admin
-    DATABASE_PASSWORD=admin
-    DATABASE_PORT=27022
-    DATABASE_URI=mongodb://localhost:27022
+```shell:.env
+DATABASE_NAME=lti_acocunt_role
+DATABASE_USERNAME=admin
+DATABASE_PASSWORD=admin
+DATABASE_PORT=27022
+DATABASE_URI=mongodb://localhost:27022
 
-    PORT=3333 // PORT để Canvas kết nối vào LTI
+PORT=3333 // PORT để Canvas kết nối vào LTI
 
-    LTI_HOST=https://your-canvas-domain.com // Các bạn đổi thành domain Canvas các bạn đang dùng nhé
-    LTI_CLIENT_ID=10000000000022 //  Đây là Client ID từ Developer key chúng ta tạo khi nảy
-    LTI_KEY=HkvZwP0DKtqWTUjX1qNjQdWiSBCZmGWNe7iRR73ke9MiosdVSrY583urVouN8mk5 // tương tự đây là Secret key từ Developer key
-    LTI_NAME=LTI_ACCOUNT_ROLE
-    LTI_ISS=https://canvas.instructure.com // ISS phải trùng với ISS trong file security.yml trong config của Canvas
-    ```
+LTI_HOST=https://your-canvas-domain.com // Các bạn đổi thành domain Canvas các bạn đang dùng nhé
+LTI_CLIENT_ID=10000000000022 //  Đây là Client ID từ Developer key chúng ta tạo khi nảy
+LTI_KEY=HkvZwP0DKtqWTUjX1qNjQdWiSBCZmGWNe7iRR73ke9MiosdVSrY583urVouN8mk5 // tương tự đây là Secret key từ Developer key
+LTI_NAME=LTI_ACCOUNT_ROLE
+LTI_ISS=https://canvas.instructure.com // ISS phải trùng với ISS trong file security.yml trong config của Canvas
+```
 
 - **_.env_**: lưu các biến môi trường. MongoDB của mình đang chạy ở port 27022 các bạn đổi thành port các bạn đang sử dụng ( thông thường là 27017 ). Tương tự với **DATABASE_USERNAME** và **DATABASE_PASSWORD**.
 
@@ -228,24 +230,24 @@ Nội dung và ý nghĩa của các file như sau:
 
 - **main.js**: Khởi chạy server
 
-4. Chỉnh sửa **package.json** thêm script:
+1. Chỉnh sửa **package.json** thêm script:
 
    `"start": "node src/main.js"`
 
-5. Chạy server bằng lệnh:
+2. Chạy server bằng lệnh:
 
    `npm start`
 
 - Nếu phản hồi như hình dưới thì server đã khởi chạy thành công.
-  ![](https://images.viblo.asia/532f385c-88a1-4ec1-b90c-2821034f1f55.png)
+  ![](https://res.cloudinary.com/ntngoc96/image/upload/v1678508025/blogs/C%C3%A0i%20%C4%91%E1%BA%B7t%20LTI%20cho%20Canvas%20LMS%20tr%C3%AAn%20NodeJS/532f385c-88a1-4ec1-b90c-2821034f1f55_csbxo9.webp)
 
 - Truy cập http://localhost:3333/ping để kiểm tra. Nếu message trả về là "_pong_" thì đã set up thành công.
 
-![](https://images.viblo.asia/6aed2d94-4d03-4e3e-b2ce-e0fb0de5ad57.png)
+![](https://res.cloudinary.com/ntngoc96/image/upload/v1678508025/blogs/C%C3%A0i%20%C4%91%E1%BA%B7t%20LTI%20cho%20Canvas%20LMS%20tr%C3%AAn%20NodeJS/6aed2d94-4d03-4e3e-b2ce-e0fb0de5ad57_brv1mn.webp)
 
 6. Quay lại **Canvas** và mở **LTI** để xem kết quả, như hình dưới thì chúng ta đã thành công trả về role của account đang đăng nhập **Canvas** - mình đang đăng nhập bằng account _Admin_ nên trong response sẽ có _Administrator_ đối với account _Student_ thì sẽ chỉ hiển thị _Student_ . Do hiện tại là môi trường dev nên server **LTI** không có https sẽ hiển thị 1 số _warning_ từ **Canvas**. Khi triển khai production cùng https các warning đó sẽ biến mất.
 
-![image.png](https://images.viblo.asia/46d7b3aa-e8cc-4dad-a89b-2f1356da2de0.png)
+![image.png](https://res.cloudinary.com/ntngoc96/image/upload/v1678508025/blogs/C%C3%A0i%20%C4%91%E1%BA%B7t%20LTI%20cho%20Canvas%20LMS%20tr%C3%AAn%20NodeJS/46d7b3aa-e8cc-4dad-a89b-2f1356da2de0_hdokp1.webp)
 
 # Các lỗi thường gặp
 
