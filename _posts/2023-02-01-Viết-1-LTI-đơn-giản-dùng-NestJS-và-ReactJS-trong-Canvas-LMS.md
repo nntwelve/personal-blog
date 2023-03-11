@@ -2,7 +2,7 @@
 layout: post
 title: 'Viết 1 LTI đơn giản dùng NestJS và ReactJS trong Canvas LMS'
 date: 2023-02-01 17:27:12 -0000
-categories: Canvas Learning Management System
+categories: Canvas-LMS
 ---
 
 # Viết 1 LTI đơn giản dùng NestJS và ReactJS trong Canvas LMS

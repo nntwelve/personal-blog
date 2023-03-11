@@ -2,7 +2,7 @@
 layout: post
 title: 'Cài đặt LTI cho Canvas LMS với NestJS Framework'
 date: 2023-01-24 11:00:12 -0000
-categories: Canvas Learning Management System
+categories: Canvas-LMS
 ---
 
 # Cài đặt LTI cho Canvas LMS với NestJS Framework

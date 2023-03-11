@@ -7,6 +7,11 @@ description: My personal blog about everything I have learned
 #   picture: https://res.cloudinary.com/ntngoc96/image/upload/v1678503088/Personal%20Info/avatar_p5dgxx.jpg
 github_username: nntwelve
 theme: minima
+minima:
+  skin: dark
+header_pages:
+  - about.md
+  - portfolio.md
 # theme: jekyll-theme-basically-basic
 plugins: # previsously gems
   - jekyll-feed
