@@ -6,13 +6,10 @@ author:
   name: Nguyen Thai Ngoc
   picture: https://res.cloudinary.com/ntngoc96/image/upload/v1678503088/Personal%20Info/avatar_p5dgxx.jpg
 github_username: nntwelve
-# theme: jekyll-theme-primer
-remote_theme: pages-themes/cayman@v0.2.0
-theme: cayman
+theme: minima
 # theme: jekyll-theme-basically-basic
 plugins: # previsously gems
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
-  - jekyll-remote-theme # add this line to the plugins list if you already have one
