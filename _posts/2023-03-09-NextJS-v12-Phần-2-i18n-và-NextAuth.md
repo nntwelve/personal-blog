@@ -5,6 +5,7 @@ date: 2023-03-09 17:27:12 -0000
 categories: NextJS
 ---
 
+<!--
 Xin chào mọi người, ở phần trước chúng ta đã cùng nhau cấu hình dự án với **axios-hooks** để tăng tính linh hoạt và thuận tiện trong lúc phát triển cũng như bảo trì và cũng cài đặt MUI với **@emotion/cache** để optimize performance của website - bạn nào chưa đọc [Phần 1 có thể xem lại ở đây](https://viblo.asia/p/cung-minh-tao-boilerplate-cho-du-an-nextjs-v12-voi-mui-v5-va-axios-hooks-phan-1-GyZJZnk2Jjm). Phần tiếp theo này chúng ta sẽ cùng tích hợp **i18n** để ứng dụng đa ngôn ngữ cho dự án, sau đó tích hợp **authentication** ( bao gồm _access_token_ và _refresh_token rotation_ ) với package **NextAuth.js**.
 
 Các bạn có thể tại về source code **Phần 1** [ở đây](https://github.com/nntwelve/Boilerplate-NextJS-12-With-Axios-Hooks) và checkout ra branch **[part-1](https://github.com/nntwelve/Boilerplate-NextJS-12-With-Axios-Hooks/tree/part-1)** để thực hành theo bài viết hoặc sử dụng source code hoàn chỉnh ở branch **[main](https://github.com/nntwelve/Boilerplate-NextJS-12-With-Axios-Hooks)**.
@@ -894,4 +895,4 @@ Nếu các bạn có thắc mắc gì có thể comment ở đây hoặc inbox r
 
 - https://nextjs.org/docs/advanced-features/i18n-routing#limits-for-the-i18n-config
 - https://viblo.asia/p/nextjs-da-ngon-ngu-khong-can-thu-vien-ngoai-Eb85oe0OZ2G
-- https://dev.to/mabaranowski/nextjs-authentication-jwt-refresh-token-rotation-with-nextauthjs-5696
+- https://dev.to/mabaranowski/nextjs-authentication-jwt-refresh-token-rotation-with-nextauthjs-5696 -->
