@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Cùng mình tạo Boilerplate cho dự án NextJS v12 - Phần 2: i18n và NextAuth.js'
+title: 'Cùng mình tạo Boilerplate cho dự án NextJS v12 - Phần 2: i18n và NextAuthjs'
 date: 2023-03-09 17:27:12 -0000
 categories: NextJS
 ---
