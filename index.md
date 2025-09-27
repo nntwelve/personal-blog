@@ -11,7 +11,7 @@ list_title: "Bài viết gần đây"
 
 ## Xin chào! 👋
 
-Chào mừng đến với blog cá nhân của mình – **Twelve**, một lập trình viên đến từ Sóc Trăng, Việt Nam. Đây là nơi mình lưu lại những gì mình học được về *Backend*, *NestJS*, *Node.js*, các **Design Pattern** và nhiều chủ đề thú vị khác. Mình tin rằng chia sẻ kiến thức chính là cách tốt nhất để hiểu sâu và giúp đỡ cộng đồng.
+Chào mừng đến với blog cá nhân của mình – **Twelve**, một lập trình viên đến từ Việt Nam. Đây là nơi mình lưu lại những gì mình học được về *Backend*, *NestJS*, *Node.js*, các **Design Pattern** và nhiều chủ đề thú vị khác. Mình tin rằng chia sẻ kiến thức chính là cách tốt nhất để hiểu sâu và giúp đỡ cộng đồng.
 
 ### 📌 Nội dung nổi bật
 
